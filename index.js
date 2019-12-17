@@ -87,9 +87,16 @@ return callback(stringList[1])
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
 */
-function processSum(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function processSum(numberList, callback) {
+ return callback ( numberList.reduce((accumulator, currentValue) => accumulator + currentValue,0))
+};
+ 
+
+
+
+
+
+
 
 /**
  * ### Challenge `processProduct`
